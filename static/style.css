@@ -1,0 +1,92 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: #fff;
+  padding: 5px;
+  height: 40; /* Set the height of the navbar */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-right button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-right button:hover {
+  background-color: #af4c98;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  overflow-x: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  height: calc(100vh - 40px); /* Subtract the height of the navbar from the viewport height */
+	background-color: #271212;
+
+}
+
+.item {
+  background-color: #404040;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+}
+
+.item img {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  max-width: 80px;
+}
+
+.item .progressbar {
+  margin-bottom: 20px;
+}
+
+.item h2 {
+  margin-top: 0;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    margin: 10px;
+  }
+}
+
+
